@@ -1,11 +1,13 @@
 import './styles.scss'
 import { MarkdownView, Plugin } from 'obsidian'
 
-import './lib/codemirror'
+// import './lib/codemirror'
+import * as CodeMirror from 'codemirror';
 import './mode/meta'
 import './mode/apl/apl'
 import './mode/asciiarmor/asciiarmor'
 import './mode/asn.1/asn.1'
+import './mode/assembly/assembly'
 import './mode/asterisk/asterisk'
 import './mode/brainfuck/brainfuck'
 import './mode/clike/clike'
@@ -133,7 +135,8 @@ export default class CMSyntaxHighlightPlugin extends Plugin {
 
   async onload() {
     // wait for layout to be ready to perform the rest
-    this.app.workspace.layoutReady ? this.layoutReady() : this.app.workspace.on('layout-ready', this.layoutReady);
+    // this.app.workspace.layoutReady ? this.layoutReady() : this.app.workspace.on('layout-ready', this.layoutReady);
+    this.app.workspace.onLayoutReady(this.layoutReady); // above line seems to have been deprecated
   }
 
   layoutReady = () => {

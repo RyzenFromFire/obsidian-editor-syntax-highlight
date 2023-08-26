@@ -41,6 +41,17 @@ Note: On some machines the `.obsidian` folder may be hidden. On MacOS you should
 Otherwise head to Settings, third-party plugins, make sure safe mode is off and
 enable the plugin from there.
 
+#### Compiling from source
+- Download source code
+- Ensure typescript is installed (`tsc --version`), if not run `npm install -g typescript`
+- Get dependencies with `npm`:
+  - `npm install --save obsidian`
+  - `npm install --save codemirror`
+- Transpile with `tsc main.ts`
+- For CSS:
+  - `npm install -g sass`
+
+
 ## Development
 
 This project uses Typescript to provide type checking and documentation.  
