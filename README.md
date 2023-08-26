@@ -5,6 +5,9 @@ A plugin for [Obsidian](https://obsidian.md) which allows syntax highlighting fo
 
 Imports code from [CodeMirror](https://github.com/codemirror/CodeMirror/)
 
+### README - Fork Changes
+Currently, the changes in this fork are limited to adding RISC-V Assembly as a highlighted language via the aliases `assembly`, `asm`, `risc`, `risc-v`, and `riscv`. The core code is based off the `shell`/`bash` syntax highlighting from the original plugin.
+
 ### Compatibility
 
 Custom plugins are only available for Obsidian v0.9.7+.
