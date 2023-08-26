@@ -1,7 +1,7 @@
 {
-  "id": "cm-editor-syntax-highlight-obsidian",
-  "name": "Editor Syntax Highlight",
-  "author": "death_au",
+  "id": "obsidian-editor-syntax-highlight",
+  "name": "Editor Syntax Highlight (Fork)",
+  "author": "death_au + RyzenFromFire",
   "authorUrl": "https://github.com/deathau",
   "description": "Show syntax highlighing in code blocks the editor",
   "isDesktopOnly": false,
